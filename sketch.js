@@ -19,7 +19,7 @@ function setup() {
 	red1 = new Rect((displayWidth/2+displayWidth/3),540,10,100);
 	red3 = new Rect((displayWidth/2+displayWidth/3)+150,540,10,100);
 	red2 = new Rect((displayWidth/2+displayWidth/3)+75,585,150,10);
-	ball = new Ball(200, 100, 70, 70);
+	ball = new Ball(displayWidth/6, 100, 70, 70);
 
 
 
