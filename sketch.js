@@ -16,10 +16,10 @@ function setup() {
 	engine = Engine.create();
 	world = engine.world;
 	ground = new Ground(displayWidth/2,600, displayWidth, 20);
-	red1 = new Rect((displayWidth/2+displayWidth/3),540,10,100);
-	red3 = new Rect((displayWidth/2+displayWidth/3)+150,540,10,100);
-	red2 = new Rect((displayWidth/2+displayWidth/3)+75,585,150,10);
-	ball = new Ball(displayWidth/6, 100, 70, 70);
+	red1 = new Rect(500,540,10,100);
+	red3 = new Rect(635,540,10,100);
+	red2 = new Rect(570,585,150,10);
+	ball = new Ball(200, 100, 70, 70);
 
 
 
@@ -41,7 +41,7 @@ function draw() {
 }
 function keyPressed()
 {
-	Matter.Body.applyForce(ball.body,ball.body.position,{x:600,y:-190})
+	Matter.Body.applyForce(ball.body,ball.body.position,{x:150,y:-200})
 }
 
 
